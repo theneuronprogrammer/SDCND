@@ -5,7 +5,7 @@ Udacity Self-Driving Car Nanodegree
 
 Projects from Self-Driving Car Engineer Nanodegree - Part 1 : Computer Vision and Deep Learning
 
-<img src="img/self-driving-car.jpg" width="480" alt="Combined Image" />
+
 
 ---
 List of Projects
