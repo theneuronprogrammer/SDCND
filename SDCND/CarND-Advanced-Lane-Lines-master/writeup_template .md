@@ -35,7 +35,7 @@ The goals / steps of this project are the following:
 [image12]: ./output_images/threshold3.png "Threshold3"
 
 
-[image13]: ./output_images/transformed1.png "Transform1"
+[image13]: ./output_images/transformed.png "Transform1"
 [image14]: ./output_images/transformed2.png "Transform2"
 [image15]: ./output_images/transformed3.png "Transform3"
 
@@ -153,7 +153,7 @@ I use a histogram to find the locations of the maximum pixels along the `y-axis`
 
 Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
 
-![alt text][image16]
+![alt text][image17]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -161,7 +161,7 @@ Then I did some other stuff and fit my lane lines with a 2nd order polynomial ki
 
 The calculation of the radius of curvature of the line is obtained from the lecture. The vehicle position is determined by calculating the average `x coordinate` of the bottom left and bottom right points of the lines and comparing it with the middle point of the `x-axis`(i.e., 640). The deviation is then converted from pixels to meters. If the deviation is postive, vehicle is to the right of the center. If the deviation is negative, vehicle is to the left of the center. An example is shown as below:
 
-![alt text][image17]
+![alt text][image16]
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
