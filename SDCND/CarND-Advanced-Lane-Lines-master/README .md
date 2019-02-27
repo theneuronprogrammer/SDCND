@@ -210,4 +210,5 @@ Here I'll talk about the approach I took, what techniques I used, what worked an
  
  1. Get rid of the hard-coded numbers as much as possible and make the code robust.
  2. Tackle the challenge videos.
- 3. Use neural network algorithms to detect these lines instead of just openCV.
+ 3. Different weather conditions may produce different results. Need to work on whatever the weather condition is, we should get the same output.
+ 4. Use neural network algorithms to detect these lines instead of just openCV.
