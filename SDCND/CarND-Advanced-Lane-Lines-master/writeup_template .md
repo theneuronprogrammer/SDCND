@@ -163,6 +163,13 @@ The calculation of the radius of curvature of the line is obtained from the lect
 
 ![alt text][image16]
 
+
+Source: http://www.intmath.com/applications-differentiation/8-radius-curvature.php
+
+
+The final radius of curvature was taken by average the left and right curve radiuses
+
+
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
  Below are the final images for all six test images:
@@ -181,6 +188,14 @@ The calculation of the radius of curvature of the line is obtained from the lect
 ### Pipeline (video)
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
+
+
+The video pipeline first checks whether or not the lane was detected in the previous frame. If it was, then it only checks for lane pixels in close proximity to the polynomial calculated in the previous frame. This way, the pipeline does not need to scan the entire image, and the pixels detected have a high confidence of belonging to the lane line because they are based on the location of the lane in the previous frame.
+
+If at any time, the pipeline fails to detect lane pixels based on the the previous frame, it will go back in to blind search mode and scan the entire binary image for nonzero pixels to represent the lanes.
+
+In order to make the output smooth I chose to average the coefficients of the polynomials for each lane line over a span of 10 frames. The gif below is the result of my pipeline running on the test video provided for the project, as well as an optional challenge video which presented additional challenges to the lane detection pipeline.
+
 
 Here's a [link to my video result](./result.mp4)
 
