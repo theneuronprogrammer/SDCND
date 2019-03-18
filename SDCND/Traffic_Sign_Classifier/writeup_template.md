@@ -40,7 +40,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/archit69/Traffic_Sign_Classifier/blob/master/Submission-Traffic_Sign_Classifier.ipynb)
+
 
 ### Data Set Summary & Exploration
 
@@ -109,7 +109,7 @@ To train the model, I used LeNet architecture. I used the AdamOptimizer with a l
 
 My final model results were:
 * validation set accuracy of 93%-95% 
-* test set accuracy of 91%-92%
+* test set accuracy of 91.5%
 
 If a well known architecture was chosen:
 * What architecture was chosen?
@@ -117,7 +117,7 @@ If a well known architecture was chosen:
 * Why did you believe it would be relevant to the traffic sign application?
   * While there can be other architectures which can be used and modified to train this model for which I ll keep studying and experimenting further but for the sake of this project, I chose to go with the architecture used in the lecture as I was already comfortable with its implementation.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
-  * Accuracy of 93% on test set gave me the confidence to test this model on new images taken from web. 4 out of 5 such images were predicted correctly using this model which proved that this model is working model. Although I ll work further on improving this model to get better accuracy.
+  * Accuracy of 91.5% on test set gave me the confidence to test this model on new images taken from web. 4 out of 5 such images were predicted correctly using this model which proved that this model is working model. Although I ll work further on improving this model to get better accuracy.
  
 
 ### Test a Model on New Images
